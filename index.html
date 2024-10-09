@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css".css>
+</head>
+<style>
+    /*.foo, .bar{
+        color: rgb(247, 11, 23);
+    }
+    .abuelo div{
+        color: blue;
+    }
+    .abuelo>div{
+        color: chartreuse;
+    }*/
+    .hijo1{
+        color: crimson;
+    }
+    .hijo1~div{
+        color: blue;
+    }
+    .foo{
+        color: lawngreen;
+    }
+    #bar{
+        color: darkorange;
+    }
+</style>
+<style>
+    #outer a {
+        background-color: orangered;
+    }
+    #outer #inner a {
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="caja1">HOLA </div>
+    <div class="caja2">HOLA </div>
+    <div class="caja3" id="foo">HOLA</div>
+    <a href="#" title="mi titulo">Enlace roto</a>
+    <button>MI BOTON</button>
+    <form>
+        <label for="fecha">Fecha</label>
+        <input name="fecha" type="date" disabled>
+        <div></div>
+
+        <input type="text" type="password" id="password">
+    </form>
+    <p class="foo">
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt natus tenetur aspernatur rem dicta harum minus sunt nemo. Porro deleniti facere reprehenderit sunt sint inventore quos dignissimos et nemo voluptatum!
+    </p>
+    <div class="bar">
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugit commodi obcaecati nisi fugiat perferendis sequi exercitationem quis, quibusdam similique itaque adipisci nihil natus porro quo blanditiis ea accusamus? Beatae.
+    </div>
+    <div class="baz">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error inventore suscipit officiis quo, nisi pariatur quasi unde adipisci dolor vel voluptas voluptatum quidem libero deleniti rerum distinctio! Totam, voluptatibus.
+    </div>
+    <div class="abuelo">
+        <div class="hijo1">soy el hijo 1</div>
+        <div class="hijo2">soy el hijo 2</div>
+        <p>soy el hijo 4</p>
+        <div class="hijo3">soy el hijo 3</div>
+    </div>
+    <p class="foo" id="bar">HOLA</p>
+    <div id="outer">
+        <div class="inner">
+               <a href="">HOLA MUNDO</a>
+        </div>
+    </div>
+</body>
+</html>
